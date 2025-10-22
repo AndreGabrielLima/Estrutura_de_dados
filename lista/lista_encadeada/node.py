@@ -24,6 +24,8 @@ class Node:
 # Este é o código que será usado para criação do Nó. A lista encadeada irá fazer uso desse arquivo através do import para conseguir usar.
 # O que dá para fazer e verificar o uso do Nó é criar instâncias para ligar os Nós e entender como funciona.
 
+# Teste do nó
+
 no1 = Node(5) # Instância = objeto da classe. É como se fosse o corpo onde será usado.
 no2 = Node(9)
 
@@ -33,7 +35,7 @@ print(no1.next) # Irá mostrar None pois não foi feita a ligação dos Nós
 no1.next = no2 # Aqui estamos fazendo a ligação do Nó no1 para o no2
 print(no1.next) # Agora é possível ver onde está localizado o no2 na memória
 
-print(no1.next.data) # Aqui estamos pedindo o dado do próximo Nó, ou seja, virá o dado de no2 que é 9
+print(no1.next.data) # Aqui estamos pedindo o dado do próximo Nó, ou seja, virá o dado de no2 que é 9'''
 
 
 
@@ -61,14 +63,10 @@ print(no1.next.data) # Aqui estamos pedindo o dado do próximo Nó, ou seja, vir
 # since each Node only knows the next Node, not the previous one.
 # We could solve this by storing the current Node in a variable, but we’ll see that later.
 
-class Node:
-    # Here we are initializing the Node class
-    def __init__(self, data):  # A Node stores two main things: the element (data) and the address of the next Node.
-        self.data = data
-        self.next = None
-
 # This is the code used to create a Node. A linked list will import this file to use the Node structure.
 # To test how it works, we can create instances to connect Nodes and understand the logic.
+
+# Test
 
 node1 = Node(5)  # Instance = object of the class. It’s like the body that will be used.
 node2 = Node(9)
@@ -79,4 +77,4 @@ print(node1.next)  # This will show None since the Nodes are not yet linked
 node1.next = node2  # Here we link node1 to node2
 print(node1.next)   # Now we can see where node2 is located in memory
 
-print(node1.next.data)  # This prints the data of the next Node — in this case, node2’s data, which is 9
+print(node1.next.data)  # This prints the data of the next Node — in this case, node2's data, which is 9
